@@ -15,6 +15,8 @@
 		E819D01022E5CE8D0019F8FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E819D00F22E5CE8D0019F8FE /* main.m */; };
 		E819D01A22E5CE8D0019F8FE /* MagicLiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E819D01922E5CE8D0019F8FE /* MagicLiveTests.m */; };
 		E819D02522E5CE8D0019F8FE /* MagicLiveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E819D02422E5CE8D0019F8FE /* MagicLiveUITests.m */; };
+		E819D03622E60B0A0019F8FE /* launchImage_text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E819D03522E60B0A0019F8FE /* launchImage_text@2x.png */; };
+		E819D03822E60B3C0019F8FE /* launchImage_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E819D03722E60B3B0019F8FE /* launchImage_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		E819D02022E5CE8D0019F8FE /* MagicLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E819D02422E5CE8D0019F8FE /* MagicLiveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicLiveUITests.m; sourceTree = "<group>"; };
 		E819D02622E5CE8D0019F8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E819D03522E60B0A0019F8FE /* launchImage_text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage_text@2x.png"; sourceTree = "<group>"; };
+		E819D03722E60B3B0019F8FE /* launchImage_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage_icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		E819CFFF22E5CE8C0019F8FE /* MagicLive */ = {
 			isa = PBXGroup;
 			children = (
+				E819D03222E608B60019F8FE /* Resource */,
 				E819D00022E5CE8C0019F8FE /* AppDelegate.h */,
 				E819D00122E5CE8C0019F8FE /* AppDelegate.m */,
 				E819D00322E5CE8C0019F8FE /* ViewController.h */,
@@ -130,6 +135,15 @@
 				E819D02622E5CE8D0019F8FE /* Info.plist */,
 			);
 			path = MagicLiveUITests;
+			sourceTree = "<group>";
+		};
+		E819D03222E608B60019F8FE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E819D03722E60B3B0019F8FE /* launchImage_icon@2x.png */,
+				E819D03522E60B0A0019F8FE /* launchImage_text@2x.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +252,8 @@
 				E819D00D22E5CE8D0019F8FE /* LaunchScreen.storyboard in Resources */,
 				E819D00A22E5CE8D0019F8FE /* Assets.xcassets in Resources */,
 				E819D00822E5CE8C0019F8FE /* Main.storyboard in Resources */,
+				E819D03622E60B0A0019F8FE /* launchImage_text@2x.png in Resources */,
+				E819D03822E60B3C0019F8FE /* launchImage_icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,13 +454,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WREVM94QNS;
 				INFOPLIST_FILE = MagicLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.MagicLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,13 +472,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WREVM94QNS;
 				INFOPLIST_FILE = MagicLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.MagicLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
