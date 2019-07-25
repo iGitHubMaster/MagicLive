@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28A08666C4961438BB3143F2 /* libPods-MagicLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB2C3616743957C16A2DE69 /* libPods-MagicLive.a */; };
+		E8022CFB22E98F6A00E28110 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8022CFA22E98F6A00E28110 /* AVFoundation.framework */; };
 		E819D00222E5CE8C0019F8FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E819D00122E5CE8C0019F8FE /* AppDelegate.m */; };
 		E819D00522E5CE8C0019F8FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E819D00422E5CE8C0019F8FE /* ViewController.m */; };
 		E819D00822E5CE8C0019F8FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E819D00622E5CE8C0019F8FE /* Main.storyboard */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74EBD5EA6FA9E935E4C11F14 /* Pods-MagicLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicLive.release.xcconfig"; path = "Target Support Files/Pods-MagicLive/Pods-MagicLive.release.xcconfig"; sourceTree = "<group>"; };
+		7DB2C3616743957C16A2DE69 /* libPods-MagicLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C269B987D00C059B7ECA3CEE /* Pods-MagicLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicLive.debug.xcconfig"; path = "Target Support Files/Pods-MagicLive/Pods-MagicLive.debug.xcconfig"; sourceTree = "<group>"; };
+		E8022CFA22E98F6A00E28110 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E819CFFD22E5CE8C0019F8FE /* MagicLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E819D00022E5CE8C0019F8FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E819D00122E5CE8C0019F8FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8022CFB22E98F6A00E28110 /* AVFoundation.framework in Frameworks */,
+				28A08666C4961438BB3143F2 /* libPods-MagicLive.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +90,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12A2D37A415D36F1F54EA54B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C269B987D00C059B7ECA3CEE /* Pods-MagicLive.debug.xcconfig */,
+				74EBD5EA6FA9E935E4C11F14 /* Pods-MagicLive.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E8022CF922E98F6A00E28110 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8022CFA22E98F6A00E28110 /* AVFoundation.framework */,
+				7DB2C3616743957C16A2DE69 /* libPods-MagicLive.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E819CFF422E5CE8C0019F8FE = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +116,8 @@
 				E819D01822E5CE8D0019F8FE /* MagicLiveTests */,
 				E819D02322E5CE8D0019F8FE /* MagicLiveUITests */,
 				E819CFFE22E5CE8C0019F8FE /* Products */,
+				E8022CF922E98F6A00E28110 /* Frameworks */,
+				12A2D37A415D36F1F54EA54B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E819D02922E5CE8D0019F8FE /* Build configuration list for PBXNativeTarget "MagicLive" */;
 			buildPhases = (
+				B729C4530D1F233BAE38D613 /* [CP] Check Pods Manifest.lock */,
 				E819CFF922E5CE8C0019F8FE /* Sources */,
 				E819CFFA22E5CE8C0019F8FE /* Frameworks */,
 				E819CFFB22E5CE8C0019F8FE /* Resources */,
@@ -272,6 +302,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B729C4530D1F233BAE38D613 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MagicLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E819CFF922E5CE8C0019F8FE /* Sources */ = {
@@ -449,6 +504,7 @@
 		};
 		E819D02A22E5CE8D0019F8FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C269B987D00C059B7ECA3CEE /* Pods-MagicLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -467,6 +523,7 @@
 		};
 		E819D02B22E5CE8D0019F8FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74EBD5EA6FA9E935E4C11F14 /* Pods-MagicLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
